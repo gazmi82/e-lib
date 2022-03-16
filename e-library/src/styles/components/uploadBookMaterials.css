@@ -1,0 +1,44 @@
+.custom-file-upload {
+  background: white;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  position: static;
+}
+.custom-file-upload input {
+  display: none;
+}
+
+.custom-file-upload .upload-svg-icon {
+  height: 15px;
+  width: 15px;
+}
+
+.custom-file-text .uploaded-file {
+  display: flex;
+  align-items: center;
+}
+.custom-file-text .attach-svg-icon {
+  height: 15px;
+  width: 15px;
+}
+.custom-file-text .file-title {
+  color: #1890ff;
+  font-family: inherit;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.custom-file-invalid {
+  padding: 5px;
+  border: 1px solid red;
+  background: #fff1f0;
+  color: red;
+}
+.custom-file-invalid .error-svg {
+  height: 20px;
+  width: 20px;
+}

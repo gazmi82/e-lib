@@ -1,0 +1,14 @@
+.rnc__notification-item--success {
+  background-color: #48df6a !important;
+  border-left: 8px solid #34c256 !important;
+}
+
+.rnc__notification-item--danger {
+  background-color: #e64655 !important;
+  border-left: 8px solid #db2131 !important;
+}
+
+.rnc__notification-item--info {
+  background-color: #4ad7ed !important;
+  border-left: 8px solid #43c5da !important;
+}

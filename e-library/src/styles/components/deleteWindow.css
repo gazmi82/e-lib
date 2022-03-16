@@ -1,0 +1,74 @@
+.delete-window-container {
+  font-family: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.719);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.delete-window-wrapper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  width: 280px;
+  height: 120px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.delete-window-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.delete-window-description .error-svg {
+  width: 30px;
+  height: 30px;
+  fill: red;
+}
+.delete-svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.delete-window-buttons {
+  display: flex;
+  justify-content: center;
+}
+.no-btn {
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 2px;
+}
+.no-btn:hover {
+  background: white;
+  border: 1px solid #3f78e0;
+  color: #3f78e0;
+}
+.yes-btn {
+  color: white;
+  background: #3f78e0;
+  border: none;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 2px;
+}
+.yes-btn:hover {
+  background: white;
+  border: 1px solid #3f78e0;
+  color: #3f78e0;
+}

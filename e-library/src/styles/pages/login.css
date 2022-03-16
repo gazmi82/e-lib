@@ -1,0 +1,56 @@
+.login-wrapper {
+  font-family: inherit;
+}
+.login-wrapper .login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: 20px auto;
+}
+.login-wrapper .login-container h2 {
+  font-size: 28px;
+  position: relative;
+}
+/* .login-wrapper .login-container h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background: #ae0138;
+} */
+.login-wrapper .error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: 1px solid red;
+  background: #fff1f0;
+  color: red;
+}
+.login-wrapper .error-svg {
+  width: 25px;
+  height: 25px;
+}
+.login-wrapper .btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.spinner {
+  animation: spinner 0.7s linear infinite;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .login-wrapper .login-container {
+    width: 100%;
+  }
+}

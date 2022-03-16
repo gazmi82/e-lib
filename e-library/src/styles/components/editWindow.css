@@ -1,0 +1,38 @@
+.edit-window-container {
+  font-family: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.719);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.edit-window-wrapper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  width: 280px;
+  height: 120px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.edit-window-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.edit-window-container .error-svg {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+.edit-window-buttons {
+  display: flex;
+  justify-content: center;
+}

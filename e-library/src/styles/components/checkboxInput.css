@@ -1,0 +1,17 @@
+.checkbox {
+  height: 42px;
+  width: -webkit-fill-available;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.checkbox input {
+  width: 20px;
+  height: 20px;
+}
+.checkbox-label {
+  padding-left: 10px;
+}

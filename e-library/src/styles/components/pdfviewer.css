@@ -1,0 +1,206 @@
+.PDF-modal-contaiener {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.89);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#myRange {
+  /* position: relative; */
+}
+
+#tooltip {
+  opacity: 0;
+  position: absolute;
+  background-color: black;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: white;
+  top: 0;
+  left: 0;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myRange:hover #tooltip {
+  opacity: 0.8;
+}
+
+.custom-document-container {
+  padding-top: 50px;
+  width: 100%;
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-page-container {
+  width: 60%;
+  overflow: scroll;
+  height: 100%;
+  cursor: grab;
+  user-select: none;
+  background-color: rgb(118 118 118);
+}
+
+.custom-page-container .react-pdf__Page__canvas {
+  margin: auto;
+}
+
+.custom-page-container::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+.nav-tools {
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  width: 100%;
+  top: 0;
+}
+
+.nav-tools svg {
+  width: 20px;
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 99;
+  padding: 8px;
+}
+
+.close-icon svg {
+  fill: black;
+}
+.next-page {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: no-repeat;
+  border: none;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+.next-page svg {
+  width: 90px;
+}
+
+.previous-page {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: no-repeat;
+  border: none;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+.previous-page svg {
+  transform: rotate(180deg);
+  width: 90px;
+}
+
+.next-page:hover,
+.previous-page:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  opacity: 1;
+}
+@media (min-width: 769px) {
+  .close-icon {
+    position: absolute;
+    right: 30px;
+    top: 80px;
+  }
+
+  .close-icon svg {
+    fill: white;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .custom-page-container {
+    width: 80%;
+  }
+
+  .next-page svg,
+  .previous-page svg {
+    width: 45px;
+  }
+  .next-page,
+  .previous-page {
+    width: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-tools {
+    gap: 10px;
+  }
+  .nav-tools svg {
+    fill: black;
+  }
+  .close-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 99;
+    padding: 8px;
+  }
+  .next-page {
+    display: none;
+  }
+  .previous-page {
+    display: none;
+  }
+
+  .document-container {
+    width: 100%;
+    min-height: 90vh;
+  }
+
+  .custom-page-container {
+    display: unset;
+    width: 100%;
+    overflow: scroll;
+    height: 90vh;
+    cursor: grab;
+    user-select: none;
+    background-color: rgb(118 118 118);
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-tools {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,78 @@
+.manage-authors-container {
+  margin-top: 40px;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.manage-authors-wrapper {
+  max-width: 1330px;
+  width: 100%;
+  overflow-x: auto;
+}
+.manage-authors-header {
+  max-width: 1330px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.authors-table-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.authors-filter-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.authors-filter-wrapper .btn-primary {
+  height: 34px;
+  width: 170px;
+}
+.manage-authors-header .filter-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2px;
+  gap: 10px;
+}
+.manage-authors-header .input-box {
+  width: 170px;
+}
+.authors-table-container .edit-svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.authors-table-container .table-cell {
+  height: 55px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+
+.authors-table-container .name {
+  width: 45%;
+  min-width: 300px;
+}
+.authors-table-container .birthday {
+  width: 45%;
+  min-width: 300px;
+}
+@media (max-width: 560px) {
+  .manage-authors-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .authors-filter-wrapper {
+    flex-direction: column;
+  }
+  .manage-authors-header .input-box,
+  .authors-filter-wrapper .btn-primary {
+    width: 270px;
+  }
+}

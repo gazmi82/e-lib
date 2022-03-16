@@ -1,0 +1,42 @@
+.btn-primary {
+  height: 40px;
+  width: 120px;
+  background: #3f78e0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn-primary:hover {
+  background: white;
+  border: 1px solid #3f78e0;
+  color: #3f78e0;
+}
+.btn-delete {
+  height: 40px;
+  width: 120px;
+  background: red;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+}
+.btn-secondary {
+  height: 40px;
+  width: 120px;
+  background: whitesmoke;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn-delete:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
+.btn-secondary:hover {
+  background: white;
+  color: #3f78e0;
+  border: 1px solid #3f78e0;
+}

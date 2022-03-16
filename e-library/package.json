@@ -1,0 +1,77 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "description": "Boilerplate to develop new application",
+  "private": false,
+  "author": {
+    "name": "ardit mirashi"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.8.8",
+    "@react-pdf-viewer/core": "^3.1.0",
+    "@react-pdf-viewer/default-layout": "^3.1.0",
+    "@reduxjs/toolkit": "^1.7.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/deep-equal": "^1.0.1",
+    "@types/jest": "^24.9.1",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/node": "^12.20.42",
+    "@types/react": "^16.14.21",
+    "@types/react-dom": "^16.9.14",
+    "@types/react-infinite-scroller": "^1.2.2",
+    "@types/react-redux": "^7.1.22",
+    "animate.css": "^4.1.1",
+    "axios": "^0.23.0",
+    "config": "^3.3.7",
+    "deep-equal": "^2.0.5",
+    "history": "^5.2.0",
+    "i18n": "^0.14.1",
+    "jwt-decode": "^3.1.2",
+    "lodash.debounce": "^4.0.8",
+    "pdfjs-dist": "^2.12.313",
+    "query-string": "^7.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.25.3",
+    "react-infinite-scroller": "^1.2.5",
+    "react-notifications-component": "^3.4.1",
+    "react-pdf": "^5.7.1",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-select": "^5.2.2",
+    "redux-thunk": "^2.3.0",
+    "swiper": "^8.0.6",
+    "typescript": "^4.1.6",
+    "use-draggable-scroll": "^0.1.0",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "pretty": "prettier --write \"./**/*.{ts,tsx,json}\"",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-pdf": "^5.0.9",
+    "eslint": "^8.10.0",
+    "prettier": "^2.5.1",
+    "react-hooks": "^1.0.1"
+  }
+}

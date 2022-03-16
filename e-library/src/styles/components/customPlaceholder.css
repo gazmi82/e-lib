@@ -1,0 +1,35 @@
+.select-box,
+.input-box,
+.text-area-input-box {
+  position: relative;
+}
+
+.select-box .custom-placeholder,
+.input-box .custom-placeholder,
+.text-area-input-box .custom-placeholder {
+  cursor: default;
+  background-color: #ffffff;
+  color: rgb(175, 175, 175);
+  position: absolute;
+  top: 11px;
+  font-size: 16px;
+  left: 7px;
+  padding: 0 3px;
+  transition: top 0.15s, left 0.15s, font-size 0.15s;
+}
+
+.filter-wrapper .select-box .custom-placeholder,
+.filter-wrapper .input-box .custom-placeholder,
+.filter-wrapper .text-area-input-box .custom-placeholder {
+  top: 5px;
+}
+
+.is-focused {
+  top: -10px !important;
+  font-size: 12.5px !important;
+  left: 20px;
+}
+
+.placeholder-error {
+  background-color: #fff1f0 !important;
+}

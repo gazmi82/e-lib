@@ -1,0 +1,64 @@
+.register-wrapper {
+  font-family: inherit;
+}
+.register-wrapper .register-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 400px;
+  gap: 10px;
+}
+.register-wrapper .register-container h2 {
+  font-size: 28px;
+  position: relative;
+}
+/* .register-wrapper .register-container h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  background: #ae0138;
+} */
+.register-wrapper .error {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid red;
+  background: #fff1f0;
+  color: red;
+}
+.register-wrapper .error-svg {
+  width: 25px;
+  height: 25px;
+}
+.register-wrapper .btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.successful {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  padding: 5px 10px;
+  background: #5bf1a4;
+  color: #30403b;
+}
+.password-container {
+  position: relative;
+}
+.eye-svg {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .register-wrapper .register-container {
+    width: 100%;
+  }
+}

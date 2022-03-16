@@ -1,0 +1,178 @@
+:root {
+  --darkBlue: #0a164c;
+  --secondaryColor: #e0e9fa;
+  --primaryColor: #3f78e0;
+}
+
+.navbar-wrapper {
+  font-family: inherit;
+}
+
+.navbar-wrapper .navbar-header {
+  height: 30px;
+  background: var(--darkBlue);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 0 30px;
+}
+
+.navbar-wrapper .navbar-header .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  color: white;
+  font-size: 14px;
+}
+.navbar-wrapper .navbar-header .item .icon {
+  font-size: 14px;
+  width: 14px;
+  fill: white;
+}
+.navbar-wrapper .navbar-header .item .icon-lang {
+  font-size: 14px;
+  width: 14px;
+}
+
+.navbar-wrapper .navbar-container {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px #f0f1f2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 0 30px;
+}
+.navbar-wrapper .logo-container {
+  justify-self: start;
+  grid-column: 1;
+}
+.navbar-wrapper .logo {
+  height: 80px;
+}
+.navbar-wrapper .route-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+  justify-self: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.navbar-wrapper .avatar-container {
+  display: flex;
+  justify-self: end;
+  grid-column: 3;
+  position: relative;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.navbar-wrapper .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.navbar-wrapper .user-options {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+  width: 170px;
+  box-shadow: 0px 3px 6px -2px rgba(0, 0, 0);
+  border-radius: 2px;
+  z-index: 2;
+}
+.navbar-wrapper .option {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.navbar-wrapper .option:hover {
+  background-color: rgb(235 235 235 / 45%);
+}
+.navbar-wrapper .link {
+  text-decoration: none;
+  color: black;
+}
+.navbar-wrapper .route-container .link {
+  border-top: 3px solid transparent;
+}
+
+.navbar-wrapper .route-container .active {
+  color: var(--primaryColor);
+  border-top: 3px solid #ae0138;
+  padding: 10px 0;
+}
+.navbar-wrapper .management-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 45px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.navbar-wrapper .management-navbar a::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.navbar-wrapper .management-navbar .manage-active {
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .navbar-wrapper .route-container {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+  .navbar-wrapper .route-container {
+    gap: 15px;
+    width: 100%;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 500px) {
+  .navbar-wrapper .navbar-header {
+    padding: 0 12px;
+  }
+  .navbar-wrapper .logo {
+    width: 250px;
+    height: 50px;
+  }
+  .navbar-wrapper .navbar-container {
+    padding: 0 12px;
+  }
+  .navbar-wrapper .avatar-container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+@media (max-width: 450px) {
+  .navbar-wrapper .route-container {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 330px) {
+  .navbar-wrapper .route-container {
+    gap: 20px;
+  }
+  .navbar-wrapper .management-navbar {
+    gap: 20px;
+  }
+  .navbar-wrapper .logo {
+    width: 150px;
+    height: 40px;
+  }
+}
